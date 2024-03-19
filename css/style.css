@@ -1,0 +1,745 @@
+body {
+    margin: 0px;
+    padding: 0px !important;
+    font-family: 'Gravitas One', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 0 15px;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    /* You can customize the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    height: 50px;
+    width: max-content;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 1em;
+    color: black;
+    filter: drop-shadow(0 0 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner span {
+    animation: loading6454 1.75s ease infinite;
+}
+
+.spinner span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.spinner span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.spinner span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+.spinner span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.spinner span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+.spinner span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+@keyframes loading6454 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.header-image>img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.banner-text {
+    color: white;
+}
+
+.custom-model .model-btn {
+    color: white;
+    border: 2px solid white;
+    padding: 5px 40px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.banner-text h3 {
+    font-size: 40px;
+    font-family: 'Gravitas One';
+}
+
+.banner-text>p {
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.custom-model-visit .model-visit-btn,
+.custom-model-contact .model-contact-btn {
+    color: white;
+    border: 2px solid white;
+    padding: 5px 42px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.modal-content h3 {
+    font-size: 20px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.custom-model-visit .model-visit-btn:hover,
+.custom-model-contact .model-contact-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.custom-nav {
+    z-index: 100;
+}
+
+.social-info {
+    position: relative;
+    z-index: 1;
+    gap: 30px;
+}
+
+.social-info a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 0px;
+}
+
+.social-info a i {
+    margin-right: 10px;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.header-content {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.header-image {
+    position: relative;
+}
+
+.custom-nav {
+    padding: 0px;
+}
+
+.custom-nav .navbar-brand {
+    font-family: 'Gravitas One';
+}
+
+.custom-nav .navbar-nav .nav-item {
+    position: relative;
+}
+
+.custom-nav .navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 5px;
+    width: 100%;
+    background: #1A5EE3;
+}
+
+.custom-nav .navbar-nav .nav-link {
+    padding: 15px 15px;
+    font-weight: 500;
+    color: black;
+    transition: .3s;
+}
+
+.custom-nav .navbar-nav .nav-link i {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.custom-nav .navbar-nav .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 5px;
+    width: 100%;
+    background: #1A5EE3;
+}
+
+
+.welcome-img img {
+    object-fit: cover;
+    width: 580px;
+    height: 620px;
+    transition: .3s;
+}
+
+.welcome-content p {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.welcome-content h3 {
+    font-family: 'Gravitas One';
+}
+
+.watch-btn a {
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+
+.watch-btn a:hover {
+    color: #4b4b4b;
+}
+
+.watch-btn a i {
+    font-size: 20px;
+    color: #28F5D0;
+}
+
+.watch-btn a h4 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.family-rooms-img img {
+    object-fit: cover;
+    width: 580px;
+    height: 620px;
+    transition: .3s;
+}
+
+.family-rooms-content h3 {
+    font-family: 'Gravitas One';
+}
+
+.family-rooms-content p {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.family-rooms-content a {
+    display: inline-block;
+    border: 2px solid #65C0BA;
+    color: #65C0BA;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: .3s;
+}
+
+.family-rooms-content a:hover {
+    background-color: #65C0BA;
+    color: white;
+}
+
+.experience-section {
+    background-color: #F4F4F4;
+    padding: 70px 0px;
+}
+
+.experience-content {
+    margin-top: 20px;
+}
+
+.experience-heading h3 {
+    font-family: 'Gravitas One';
+    font-size: 25px;
+}
+
+.experience-heading p {
+    font-size: 14px;
+    color: #606060;
+    margin-top: 20px;
+}
+
+.experience-content-box {
+    transition: .3s;
+    /* box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+}
+
+/* .experience-content-box:hover {
+    transform: scale(1.1);
+} */
+
+.experience-content-box a {
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+
+.experience-content-box a img {
+    width: 40px;
+}
+
+.experience-content-box a:hover {
+    letter-spacing: 2px;
+}
+
+.experience-content-box a h4 {
+    margin-top: 15px;
+    font-family: 'Gravitas One';
+    font-size: 16px;
+
+}
+
+.experience-content-box p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.tour-managment-section {
+    padding: 70px 0px;
+}
+
+.tour-managment-heading h3 {
+    font-family: 'Gravitas One';
+    font-size: 25px;
+
+}
+
+.tour-managment-heading p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.custom-carousel .carousel-item {
+    width: 100%;
+    height: 500px;
+}
+
+.blog-post-heading p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.blog-post-heading h3 {
+    font-family: 'Gravitas One';
+    font-size: 25px;
+}
+
+.blog-img {
+    object-fit: cover;
+    width: 100%;
+    height: 240px;
+}
+
+.blog-post-section {
+    background-color: #65C0BA;
+    padding: 70px 0px;
+}
+
+.blog-post-content {
+    background-color: white;
+    padding: 10px 15px;
+}
+
+.blog-post-content span {
+    color: #898989;
+}
+
+.blog-post-content a:hover {
+    color: #606060;
+
+}
+
+.blog-post-content h4 {
+    font-family: 'Gravitas One';
+    font-size: 16px;
+}
+
+.blog-post-content p {
+    color: #898989;
+    font-size: 13px;
+}
+
+.blog-post-box {
+    margin-top: 30px;
+}
+
+.destination-heading h3 {
+    font-family: 'Gravitas One';
+    font-size: 25px;
+}
+
+.destination-heading p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.destination-box {
+    margin-top: 30px;
+}
+
+.destination-box img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+
+}
+
+.destination-box-content a:hover {
+    color: #606060;
+}
+
+.destination-box-content h4 {
+    font-family: 'Gravitas One';
+    font-size: 16px;
+}
+
+.destination-rating i {
+    color: #65C0BA;
+}
+
+.destination-section {
+    padding: 70px 0px;
+}
+
+.destination-btn a {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #65C0BA;
+    padding: 10px 30px;
+    color: #65C0BA;
+    margin-top: 30px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.destination-btn a:hover {
+    background-color: #65C0BA;
+    color: white;
+}
+
+.rating-stars ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#stars {
+    display: flex;
+}
+
+.rating-stars ul>li.star>i.fa {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.rating-stars ul>li.star.hover>i.fa {
+    color: #82b4af;
+}
+
+.rating-stars ul>li.star.selected>i.fa {
+    color: #65C0BA;
+}
+
+
+
+
+.footer-section {
+    background-color: #1A1A1A;
+    padding: 70px 0px;
+}
+
+.footer-column h4 {
+    font-family: 'Gravitas One';
+    font-size: 16px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.footer-column ul {
+    padding: 0;
+}
+
+.footer-column ul li {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #898989;
+    transition: .3s;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.footer-column p {
+    color: white;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #898989;
+    transition: .3s;
+
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-column input {
+    color: #898989;
+    background-color: #1A1A1A;
+    border: none;
+    border-bottom: 1px solid #898989;
+    padding: 15px 15px;
+    outline: none;
+    width: 250px;
+    color: white;
+}
+
+.footer-column a i {
+    color: #898989;
+
+}
+
+.hotels>img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.overlay-hotels {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.contact-heading h3 {
+    font-family: 'Gravitas One';
+    font-size: 25px;
+}
+
+.contact-heading p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.contact-section {
+    padding: 70px 0px;
+}
+
+.contact label,
+.contact-message label {
+    font-weight: 500;
+}
+
+.contact input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+
+.contact-message {
+    margin-top: 20px;
+}
+
+.contact-message textarea {
+    width: 100%;
+    height: 150px;
+    outline: none;
+}
+
+.contact-btn a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #65C0BA;
+    color: white;
+    padding: 10px 40px;
+    transition: .3s;
+}
+
+.contact-btn a:hover {
+    background-color: white;
+    border: 1px solid #65C0BA;
+    color: black;
+}
+
+.hotel-details>span {
+    color: gray;
+}
+
+.hotels-section a {
+    text-decoration: none;
+    color: black;
+}
+
+.facility-info span {
+    font-size: 14px;
+}
+
+.facility-info span svg {
+    margin-right: 5px;
+}
+
+.hotel-details h6 {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.hotel-details>h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hotel-details p {
+    font-size: 12px;
+}
+
+.hotel-pricing span {
+    font-size: 12px;
+}
+
+.hotel-pricing h6 {
+    margin: 0;
+}
+
+.hotel-pricing h4 {
+    margin: 0;
+}
+
+.hotel-info {
+    box-shadow: 0px 2px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-service p {
+    font-size: 15px;
+}
+
+.hotel-service h3 {
+    font-weight: bold;
+}
+
+.resort-facility ul {
+    margin-top: 15px;
+}
+
+.resort-facility ul li {
+    margin-top: 5px;
+}
+
+.popular-facility ul li {
+    margin-top: 5px;
+}
+
+.custom-progress .progress {
+    height: 10px;
+}
+
+.top-destination h3 {
+    font-family: 'Gravitas One';
+    font-size: 25px;
+}
+
+.top-destination p {
+    font-size: 14px;
+    color: #606060;
+    margin-top: 20px;
+}
+
+.top-places-btn a {
+    background: #ff433a;
+    color: white;
+    transition: .3s;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.top-places-btn a:hover {
+    background: #ca281f;
+}
+
+.restaurant h3 {
+    font-weight: bold;
+}
+
+.restaurant p span {
+    color: #DBAB4A;
+    font-weight: bold;
+}
+
+#to-top i {
+    background: crimson;
+    padding: 15px;
+    font-size: 25px;
+    color: white;
+    border-radius: 30px;
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+}
